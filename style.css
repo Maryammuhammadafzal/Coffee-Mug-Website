@@ -6,19 +6,20 @@
 }
 body{
     width: 100%;
-    height: 100vh;
+    min-height: 1000px;
     font-family: 'Courier New', Courier, monospace;
     background-color: #ffffff;
 }
 
 .container{
     width: 100%;
-    height: 100vh;
+    min-height: 1000px;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding:1rem 5rem;
     overflow-x: hidden;
+    gap: 10%;
 }
 
 nav{
@@ -103,7 +104,7 @@ ul{
 
 .hero{
     width: 100%;
-    height: 100vh;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,14 +117,14 @@ ul{
 
 .background{ 
     width: 100%;
-    height: 85vh;
+    height: 550px;
     display: flex;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content{
     width: 100%;
-    height: 80vh;
+    height: 550px;
     display: flex;
     position:absolute;
     padding:1rem 2rem;
@@ -194,76 +195,75 @@ ul{
 
 .about{
     width: 100%;
-    height: 80vh;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;  
     margin: 3rem 0rem;
-    
 }
 
 .about-content{
     width: 90%;
-    height: 70vh;
+    height: 350px;
     display: flex;
     align-items: center;
-    justify-content: center; 
     flex-direction: column; 
     margin: 2rem 0rem;
+
 }
 
-.about-content h2{
+.about-heading{
     width: 60%;
-    height: 15vh;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center; 
     flex-direction: column;
     text-align: center; 
     line-height: 35px;
+    padding: 20px 0px;
+
 }
 
 .about-content p{
     width: 60%;
-    height: 13vh;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center; 
     flex-direction: column;
     text-align: center; 
-    margin: 1rem 1rem;
     line-height: 20px;
+    padding: 20px 0px;
+
 }
 
 .about-content a{
     width: 12.5%;
-    height:15vh;
+    height:20px;
     display: flex;
     align-items: center;
     justify-content: end; 
-    flex-direction: column;
-    text-align: center; 
     text-decoration: none;
-    margin-bottom: 20%;
     color: rgb(211, 118, 57); 
     border-bottom: 1px solid rgb(211, 118, 57);
+    padding: 20px 0px 10px 0px;
     
     
 }
 
 .feature{
     width: 100%;
-    height: 15vh;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;  
     margin: 1rem 0rem;
-    
 }
 
 .feature-content{
     width: 90%;
-    height: 100vh;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -271,14 +271,17 @@ ul{
     margin: 2rem 0rem;
 }
 
-.feature-heading{
+.feature-heading,
+.product-heading
+{
     width: 20%;
-    height: 10vh;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;  
     flex-direction: row;
     margin: 2rem 0rem;
+
 }
 .right-line,.left-line{
     text-align: center;
@@ -286,8 +289,8 @@ ul{
     height: .2vh;
     border-top: 1px solid rgb(167, 167, 167);
 }
-.feature-content h5{
-    text-align: center;
+h5{
+    /* text-align: center; */
     width: 50%;
     height: 2vh;
     color: #878585;
@@ -295,45 +298,194 @@ ul{
 
 .feature-cards{
     width: 80%;
-    height: 70vh;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;  
     margin: 2rem 0rem;
     gap: 5%;
+
+}
+
+.card-row{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; 
+    gap: 20px;
 }
 
 .feature-cards .card-1 , .feature-cards .card-2{
     width: 50%;
-    height: 80vh;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;  
     flex-direction: column;
-    margin: 2rem 0rem;
-    gap: 20px;
+
 }
 
-.feature-cards .card-1 img,.feature-cards .card-2 img{
-    height: 90vh;
+.card-1 img , .card-2 img{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+
+}
+.feature-cards .card-1 p,.feature-cards .card-2 p,
+.card-row .card-1 p,.card-row .card-2 p{
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;  
 
 }
-.feature-cards .card-1 p,.feature-cards .card-2 p{
-    height: 7vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-}
-.feature-cards .card-1 h3,.feature-cards .card-2 h3{
-    height: 5vh;
+.feature-cards .card-1 h3,.feature-cards .card-2 h3,
+.card-row .card-1 h3,.card-row .card-2 h3{
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;  
     font-size: 1.2em;
+
+}
+
+.product{
+    min-width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+  
+
+}
+
+.product-content{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; 
+ 
+}
+
+.product-cards{
+    width: 95%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: 20px;
+
+
+}
+
+.card-row .card-1 , .card-row .card-2{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+}
+
+.coffee-magz{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 3rem 0rem;
+    border: 1px solid black;
+}
+
+.magz-content{
+    width: 85%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border: 1px solid black;
+}
+.magz-left-content{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    margin: 1rem 0rem;
+    border: 1px solid black;
+   padding: 3rem ;
+   gap: 20px;
+}
+
+.magz-left-content h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-size: 35px;
+  color: #393939;
+}
+
+
+.magz-left-content a{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+
+
+.magz-right-content{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 3rem 0rem;
+    border: 1px solid rgb(30, 184, 146);
+}
+
+.magz-images{
+    width: 43%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    border: 1px solid black;
+    gap: 10px;
+
+}
+
+.magz-images img{
+  width: 100%;
+  height: 300px;
+}
+.row-img{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    border: 1px solid black;
+}
+
+.row-img img{
+    width: 100%;
+  height: 140px;
 }
