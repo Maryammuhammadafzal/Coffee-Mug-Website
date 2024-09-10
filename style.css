@@ -153,7 +153,7 @@ nav .logo{
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    font-family:/*system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',*/ Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .content h1 span{
     font-family:cursive;
@@ -648,7 +648,7 @@ h5{
 
 .input-content{
     height: 180px;
-    width: 53%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -658,7 +658,7 @@ h5{
 
 .input-heading{
     height: 80px;
-    width: 60%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -666,6 +666,7 @@ h5{
 }
 
 .input-heading h2{
+    text-align: center;
    font-size: 40px;
    width: 100%;
    color: #ffffff;
@@ -682,7 +683,7 @@ h5{
 }
 
 .input input{
-    width: 70%;
+    width: 50%;
     height: 55px;
     border: 1px solid grey;
     background: transparent;
@@ -691,7 +692,7 @@ h5{
 }
 
 .input a{
-    width: 25%;
+    width: 15%;
     height: 55px;
     border: 1px solid grey;
     background: #ffffff;
@@ -715,14 +716,13 @@ h5{
 }
 
 .footer-content{
-    width: 90%;
+    max-width: 80%;
     height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
      flex-direction: column;
     padding: 1rem ;
-    
     gap: 5%;
 }
 
@@ -731,12 +731,12 @@ h5{
     height: 350px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 1rem ;
     gap: 5%;
     
 }
-
+/* 
 .footer-parts{
     width: 35%;
     height: 300px;
@@ -744,11 +744,42 @@ h5{
     justify-content: center;
     flex-direction: column;
     
+} */
+
+.logo-section{
+    width: 45%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0rem 1rem;
+}
+.menu-section{
+    width: 25%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.follow-section{
+    width: 25%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-section{
+    width: 25%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo{
     width: 100%;
-    height: 80px;
+    height: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -757,9 +788,10 @@ h5{
 
 .logo-content{
     width: 100%;
-    height: 180px;
+    height: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
      
 }
@@ -790,7 +822,6 @@ h5{
 } 
 
 .footer-parts h2{
-    padding: 0rem 2rem;
     font-size: 1.4rem;
     font-weight: 300;
     color: #878585;
@@ -821,18 +852,20 @@ h5{
     flex-direction: column;
     text-decoration: none;
     color: #393939;
+    padding: .4rem 0rem;
 }
 #gmail , #gmail-li{
+    text-align: center;
+    padding: .5rem 0rem .5rem 0rem;
     font-size: 25px;
-    color: #070707;
     height: 50px;
-    padding: .2rem;
+    color: #070707;
 }
 
 #webflow{
     font-size: 10px;
     color: #878585;
-    padding: .2rem;
+    padding: .4rem 0rem;
 }
 
 
@@ -840,6 +873,34 @@ h5{
 
 @media (max-width : 568px){
 
+    #gmail-li a{
+       
+        padding: .5rem 0rem .5rem 0rem;
+        font-size: 15px;
+        height: 50px;
+        color: #070707;
+    }
+
+    .logo-content p{
+        font-size: .7rem;
+        height: 60px;
+    }
+
+    .logo-content h6 a{
+        font-size: .5rem;
+    }
+
+    .logo-section .logo h3{
+        font-size: 1rem;
+    }
+
+    .footer-parts ul li a{
+        font-size: .5rem;
+    }
+
+    .footer{
+        height: 400px;
+    }
 }
 @media (min-width : 568px){
 
@@ -847,7 +908,7 @@ h5{
 @media (min-width : 768px){
 
 }
-@media (min-width : 1024px){
+@media (max-width : 1024px){
 
     .container{
         padding: 1rem .5rem;
@@ -889,6 +950,14 @@ h5{
      .footer-parts h2{
         padding: 0rem 0rem;
      }
+     .logo-section{
+        width: 60%;
+
+     }
+
+     
+
+     
 }
 @media (max-width : 1280px){
     .container{
@@ -929,7 +998,9 @@ h5{
         padding: 0rem 0rem;
      }
 }
-@media (min-width : 1980px){
+@media (max-width : 1380px){
+
+
 
 }
 @media (min-width : 2560px){
